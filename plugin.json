@@ -45,10 +45,34 @@
       "dataType": "select",
       "itemDataType" : "text",
       "options": [
+        {"label":"Airport", "value":"airport"},
+        {"label":"ATM", "value":"atm"},
+        {"label":"Bank", "value":"bank"},
+        {"label":"Bar", "value":"bar"},
+        {"label":"Bus Station", "value":"bus_station"},
         {"label":"Cafe", "value":"cafe"},
-        {"label":"Bank", "value":"bank"}
+        {"label":"Casino", "value":"casino"},
+        {"label":"Church", "value":"church"},
+        {"label":"Dentist", "value":"dentist"},
+        {"label":"Doctor", "value":"doctor"},
+        {"label":"Hindu Temple", "value":"hindu_temple"},
+        {"label":"Hospital", "value":"hospital"},
+        {"label":"Lawyer", "value":"lawyer"},
+        {"label":"Mosque", "value":"mosque"},
+        {"label":"Museum", "value":"museum"},
+        {"label":"Parking", "value":"parking"},
+        {"label":"Pharmacy", "value":"pharmacy"},
+        {"label":"Police", "value":"police"},
+        {"label":"Post Office", "value":"post_office"},
+        {"label":"Real Estate Agency", "value":"real_estate_agency"},
+        {"label":"Restuarant", "value":"restuarant"},
+        {"label":"School", "value":"school"},
+        {"label":"Shopping Mall", "value":"shopping_mall"},
+        {"label":"Stadium", "value":"stadium"},
+        {"label":"Train Station", "value":"train_station"},
+        {"label":"University", "value":"university"}
       ],
-      "defaultValue" : "1000"
+      "defaultValue" : "cafe"
     },
     {
       "name": "key",

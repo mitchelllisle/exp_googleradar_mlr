@@ -1,0 +1,61 @@
+{
+  "name": "google_radar_mlr",
+  "displayName": "Google Radar MLR",
+  "iconURL" : "https://developers.google.com/maps/images/lhimages/api/icon_distancematrixapi.svg",
+  "helpURL" :  "https://github.com/mitchelllisle/exp_googleway_mlr",
+  "rPackageDependencies": ["httr","jsonlite"],
+  "function": "google_radar",
+  "rSourceFile" : "plugin.r",
+  "hasQueryField" : false,
+  "inputParameters": [
+    {
+      "name": "latitude",
+      "displayName":"Latitude",
+      "dataType": "text",
+      "defaultValue" : "-37.7994",
+      "required" : true
+    },
+    {
+      "name": "longitude",
+      "displayName":"Longitude",
+      "dataType": "text",
+      "defaultValue" : "144.9749",
+      "required" : true
+    },
+    {
+      "name": "radius",
+      "displayName": "Radius",
+      "dataType": "select",
+      "itemDataType" : "text",
+      "options": [
+        {"label":"1000 Metres", "value":"1000"},
+        {"label":"2000 Metres", "value":"2000"},
+        {"label":"5000 Metres", "value":"5000"},
+        {"label":"10000 Metres", "value":"10000"},
+        {"label":"20000 Metres", "value":"20000"},
+        {"label":"30000 Metres", "value":"30000"},
+        {"label":"40000 Metres", "value":"40000"},
+        {"label":"50000 Metres", "value":"50000"}
+      ],
+      "defaultValue" : "1000"
+    },
+    {
+      "name": "type",
+      "displayName": "Business Type",
+      "dataType": "select",
+      "itemDataType" : "text",
+      "options": [
+        {"label":"Cafe", "value":"cafe"},
+        {"label":"Bank", "value":"bank"}
+      ],
+      "defaultValue" : "1000"
+    },
+    {
+      "name": "key",
+      "displayName":"API Key",
+      "dataType": "text",
+      "defaultValue" : "",
+      "required" : true
+    }
+  ]
+}
